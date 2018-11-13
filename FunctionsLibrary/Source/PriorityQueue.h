@@ -23,8 +23,8 @@ public:
 	PriorityQueue();
 	~PriorityQueue();
 	void enqueue(const T& element);
-	T dequeue() throw(...);
-	T peek() const throw(...);
+	T dequeue();
+	T peek() const;
 	int size() const;
 };
 
@@ -77,11 +77,11 @@ void PriorityQueue<T>::enqueue(const T& element)
 }
 
 template <typename T>
-T PriorityQueue<T>::dequeue() throw(...)
+T PriorityQueue<T>::dequeue()
 {
 	if (this->first == nullptr)
 	{
-		throw "Queue is already empty.";
+		return nullptr;
 	}
 	else
 	{
@@ -95,12 +95,8 @@ T PriorityQueue<T>::dequeue() throw(...)
 }
 
 template <typename T>
-T PriorityQueue<T>::peek() const throw(...)
+T PriorityQueue<T>::peek() const
 {
-	if (this->first == nullptr)
-	{
-		throw "Queue is empty";
-	}
 	return this->first->element;
 }
 

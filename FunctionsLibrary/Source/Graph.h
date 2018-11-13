@@ -243,13 +243,13 @@ void Graph<T>::printShortestPath(T from, T to) const
 	this->shortestPath(this->getPos(from));
 
 	DataNode *walker = this->path[this->getPos(to)];
-	cout << "From: " << from << "   To: " << to << endl;
+	std::cout << "From: " << from << "   To: " << to << std::endl;
 	while (walker != nullptr)
 	{
-		cout << "- " << this->nodes[walker->entityIndex] << " -" << this->path[walker->entityIndex]->weight;
+		std::cout << "- " << this->nodes[walker->entityIndex] << " -" << this->path[walker->entityIndex]->weight;
 		walker = walker->prev;
 	}
-	cout << endl << "Total cost: " << this->path[this->getPos(to)]->weight << endl;
+	std::cout << std::endl << "Total cost: " << this->path[this->getPos(to)]->weight << std::endl;
 }
 
 template <typename T>

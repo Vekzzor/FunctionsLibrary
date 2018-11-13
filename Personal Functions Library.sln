@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Testbed", "Testbed\Testbed.vcxproj", "{90303FFB-B8BE-4F00-B461-836762B67D23}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53DEEE7A-5492-41B5-8FD9-ADC34FC7441E} = {53DEEE7A-5492-41B5-8FD9-ADC34FC7441E}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunctionsLibrary", "FunctionsLibrary\FunctionsLibrary.vcxproj", "{53DEEE7A-5492-41B5-8FD9-ADC34FC7441E}"
 EndProject

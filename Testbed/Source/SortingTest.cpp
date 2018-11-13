@@ -1,6 +1,8 @@
-#include "Sorting.h"
+#include "FunctionsLibraryPCH.h"
 #include <random>
 #include <time.h>
+#include <cmath>
+
 struct Test
 {
 	int val;
@@ -30,7 +32,7 @@ int comparator(const void* a, const void* b) {
 	if (*(float*)a > *(float*)b) return 1;
 }
 
-
+using namespace std;
 int main()
 {
 	//int arr[] = { 5,2,7,3,9,1 }
