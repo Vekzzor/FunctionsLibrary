@@ -10,6 +10,7 @@
 #include <vector>
 #include <iostream>
 #include <DirectXMath.h>
+#include <d3d11.h>
 #include <bits.h>
 
 #ifdef _DEBUG
